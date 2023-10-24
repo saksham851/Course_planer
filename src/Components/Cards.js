@@ -16,7 +16,7 @@ const Cards = (props) => {
 }
 
   return (
-    <div>
+    <div className='flex flex-wrap justify-center mb-4 gap-4'>
      {getCourses().map((course) => {
        return <Card key={course.id} course={course}/>
       })}
